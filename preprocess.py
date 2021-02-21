@@ -5,9 +5,9 @@ if sys.version_info[0] < 3 and sys.version_info[1] < 2:
 
 from os import listdir, path
 
-if not path.isfile('/workspace/Wav2Lip/face_detection/detection/sfd/s3fd.pth'):
-	raise FileNotFoundError('Save the s3fd model to /workspace/Wav2Lip/face_detection/detection/sfd/s3fd.pth \
-							before running this script!')
+#if not path.isfile('/workspace/Wav2Lip/face_detection/detection/sfd/s3fd.pth'):
+#	raise FileNotFoundError('Save the s3fd model to /workspace/Wav2Lip/face_detection/detection/sfd/s3fd.pth \
+#							before running this script!')
 
 import multiprocessing as mp
 from concurrent.futures import ThreadPoolExecutor, as_completed
