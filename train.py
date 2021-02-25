@@ -34,7 +34,7 @@ training_path = os.path.join(input_path, channel_name)
 def train():
     print('Starting the training.')
     try:
-        os.system("color_syncnet_train.py --data_root {} -checkpoint_dir {}".format(training_path,model_path))
+        os.system("python3 color_syncnet_train.py --data_root {} --checkpoint_dir {}".format(training_path,model_path))
         print('Training complete.')
     except Exception as e:
         # Write out an error file. This will be returned as the failureReason in the
